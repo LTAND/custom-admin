@@ -3,16 +3,16 @@ module.exports = {
   types: [
     { value: ':sparkles: feat', name: '✨ feat:     新功能' },
     { value: ':bug: fix', name: '🐛 fix:      修复' },
-    { value: ':memo: doc', name: '📝 doc:     文档变更' },
+    { value: ':memo: doc', name: '📝 doc:      文档变更' },
     { value: ':art: style', name: '🎨 style:    代码格式(不影响代码运行的变动)' },
     { value: ':recycle: refactor', name: '♻️ refactor: 重构(既不是增加feature),也不是修复bug' },
-    { value: ':zap: perf', name: '⚡️ perf:     性能优化' },
+    { value: ':zap: perf', name: '⚡️perf:     性能优化' },
     { value: ':white_check_mark: test', name: '✅ test:     添加测试' },
     { value: ':rocket: chore', name: '🚀 chore:    开发工具变动(构建、脚手架工具等)' },
-    { value: ':package: build', name: '📦️ build:    打包' },
-    { value: ':rewind: revert', name: '⏪️ revert:   回退版本' },
+    { value: ':package: build', name: '📦️ build:   打包' },
+    { value: ':rewind: revert', name: '⏪️ revert:  回退版本' },
     { value: ':tada: version', name: '🎉 version:  发布版本' },
-    { value: ':twisted_rightwards_arrows: merge', name: '🔀 merge:  合并分支' }
+    { value: ':twisted_rightwards_arrows: merge', name: '🔀 merge:    合并分支' }
   ],
   scopes: [{ name: '业务' }, { name: '发版' }, { name: '图片调整' }, { name: '基础配置' }],
 
