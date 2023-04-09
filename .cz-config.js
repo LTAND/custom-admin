@@ -14,7 +14,8 @@ module.exports = {
     { value: ':tada: version', name: '🎉 version:  发布版本' },
     { value: ':twisted_rightwards_arrows: merge', name: '🔀 merge:    合并分支' }
   ],
-  scopes: [{ name: '业务' }, { name: '发版' }, { name: '图片调整' }, { name: '基础配置' }],
+  // scopes: [{ name: '业务' }, { name: '发版' }, { name: '图片调整' }, { name: '基础配置' }],
+  scopes: [],
 
   // it needs to match the value for field type. Eg.: 'fix'
   /*
@@ -34,11 +35,20 @@ module.exports = {
     customScope: '请输入修改范围(可选):',
     subject: '请简要描述提交(必填):',
     body: '请输入详细描述(可选):',
+    breaking: '非兼容性说明 (可选):',
     footer: '请输入要关闭的issue,例如:#31, #34(可选):',
     confirmCommit: '确定提交以上信息?(y/n)'
   },
-  // 跳过问题
-  skipQuestion: ['body', 'footer'],
   // subject文字默认长度是72
-  subjectLimit: 72
+  subjectLimit: 72,
+  // 跳过空scope
+  skipEmptyScopes: true,
+  // 跳过问题
+  skipQuestions: ['body', 'footer']
+
+  // 设置为 true，在 scope 选择的时候，会有 empty 和 custom 可以选择
+  // 顾名思义，选择 empty 表示 scope 缺省，如果选择 custom，则可以自己输入信息
+  // allowCustomScopes: true,
+  // 只有我们 type 选择了 feat 或者是 fix，才会询问我们 breaking message.
+  // allowBreakingChanges: ['✨ feat:     新功能', 'fix']
 }
