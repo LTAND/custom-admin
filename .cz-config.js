@@ -1,4 +1,4 @@
-m odule.exports = {
+module.exports = {
   // 可选类型
   types: [
     { value: ':sparkles: feat', name: '✨ feat:     新功能' },
